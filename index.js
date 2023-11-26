@@ -5,11 +5,6 @@ const bodyParser = require('body-parser');
 
 app.set('view engine', 'ejs');
 
-app.use(session({
-  secret: 'secret-key',
-  resave: false,
-  saveUninitialized: false,
-}));
 
 app.use(express.urlencoded({ extended: true }));
 
